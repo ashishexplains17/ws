@@ -2,10 +2,10 @@
   "name": "dealsfinder-websocket-server",
   "version": "1.0.0",
   "description": "WebSocket server for DealsFinder application",
-  "main": "websocket-server.js",
+  "main": "dist/websocket-server.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/websocket-server.js",
+    "start": "npm run build && node dist/websocket-server.js",
     "dev": "ts-node-dev --respawn websocket-server.ts"
   },
   "dependencies": {
